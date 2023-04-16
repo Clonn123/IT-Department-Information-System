@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9CA3193C-340F-402F-9998-F34D643E812B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Course_project</RootNamespace>
+    <AssemblyName>Course project</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddDevice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDevice.Designer.cs">
+      <DependentUpon>AddDevice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEmployee.Designer.cs">
+      <DependentUpon>AddEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddJob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddJob.Designer.cs">
+      <DependentUpon>AddJob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationContext.cs" />
+    <Compile Include="InteractionWithDB.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateCartridge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateCartridge.Designer.cs">
+      <DependentUpon>UpdateCartridge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateDevice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateDevice.Designer.cs">
+      <DependentUpon>UpdateDevice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateEmployee.Designer.cs">
+      <DependentUpon>UpdateEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateJob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateJob.Designer.cs">
+      <DependentUpon>UpdateJob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Авторизация %28новый%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Авторизация %28новый%29.Designer.cs">
+      <DependentUpon>Авторизация %28новый%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Авторизация %28стартовая%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Авторизация %28стартовая%29.Designer.cs">
+      <DependentUpon>Авторизация %28стартовая%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Авторизация %28существующий%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Авторизация %28существующий%29.Designer.cs">
+      <DependentUpon>Авторизация %28существующий%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Заявка на картриджи.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Заявка на картриджи.Designer.cs">
+      <DependentUpon>Заявка на картриджи.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Заявка на оборудование.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Заявка на оборудование.Designer.cs">
+      <DependentUpon>Заявка на оборудование.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Меню %28обычный%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Меню %28обычный%29.Designer.cs">
+      <DependentUpon>Меню %28обычный%29.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddDevice.resx">
+      <DependentUpon>AddDevice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEmployee.resx">
+      <DependentUpon>AddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddJob.resx">
+      <DependentUpon>AddJob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UpdateCartridge.resx">
+      <DependentUpon>UpdateCartridge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateDevice.resx">
+      <DependentUpon>UpdateDevice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateEmployee.resx">
+      <DependentUpon>UpdateEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateJob.resx">
+      <DependentUpon>UpdateJob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Авторизация %28новый%29.resx">
+      <DependentUpon>Авторизация %28новый%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Авторизация %28стартовая%29.resx">
+      <DependentUpon>Авторизация %28стартовая%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Авторизация %28существующий%29.resx">
+      <DependentUpon>Авторизация %28существующий%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Заявка на картриджи.resx">
+      <DependentUpon>Заявка на картриджи.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Заявка на оборудование.resx">
+      <DependentUpon>Заявка на оборудование.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Меню %28обычный%29.resx">
+      <DependentUpon>Меню %28обычный%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
