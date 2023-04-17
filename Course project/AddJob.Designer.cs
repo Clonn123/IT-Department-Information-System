@@ -61,7 +61,7 @@
             // textBoxId
             // 
             this.textBoxId.Location = new System.Drawing.Point(64, 7);
-            this.textBoxId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxId.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxId.Name = "textBoxId";
             this.textBoxId.Size = new System.Drawing.Size(207, 22);
             this.textBoxId.TabIndex = 2;
@@ -69,7 +69,7 @@
             // textBoxName
             // 
             this.textBoxName.Location = new System.Drawing.Point(64, 42);
-            this.textBoxName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxName.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(207, 22);
             this.textBoxName.TabIndex = 3;
@@ -77,7 +77,7 @@
             // btnSave
             // 
             this.btnSave.Location = new System.Drawing.Point(19, 116);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(124, 28);
             this.btnSave.TabIndex = 4;
@@ -89,7 +89,7 @@
             // 
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.Location = new System.Drawing.Point(147, 116);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(124, 28);
             this.btnCancel.TabIndex = 5;
@@ -130,7 +130,8 @@
             this.Controls.Add(this.textBoxId);
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.labelID);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AddJob";

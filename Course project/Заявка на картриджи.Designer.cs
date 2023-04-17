@@ -69,7 +69,10 @@
             this.Controls.Add(this.BoxCar);
             this.Controls.Add(this.bRep);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Заявка_на_картриджи";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Заявка на заправку картриджа";
             this.ResumeLayout(false);
             this.PerformLayout();

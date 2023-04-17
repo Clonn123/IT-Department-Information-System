@@ -69,7 +69,10 @@
             this.Controls.Add(this.BoxDev);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.bRep);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Заявка_на_оборудование";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Заявка на ремонт оборудования";
             this.ResumeLayout(false);
             this.PerformLayout();
